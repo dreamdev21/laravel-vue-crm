@@ -1,0 +1,138 @@
+/*************** 1. Sass Variables ***************/
+$body-bg: #f5f6fa;
+
+$border-bg: #e1e5f1; //#eaecf3
+
+$font-color: #2e323c;
+$font-color-light: #858b9a;
+
+$primary-color: #4266b2;
+$primary-light-color: #dfe3ef;
+$secondary-color: #65ab53;
+$secondary-dark-color: #8b9dc4;
+
+$sidebar-dark-bg: #1b2947;
+
+$white: #ffffff;
+$black: #000000;
+
+$light-color: #dae1f1;
+$dark-color: #3c3c3c;
+
+$red: #c53232;
+$dark-red: #e00000;
+$light-red: #fde8e8;
+
+$yellow: #e2a622;
+$dark-yellow: #ffc107;
+$light-yellow: #fdebd1;
+
+$green: #329266;
+$dark-green: #1dc1d6;
+$light-green: #d8f1ef;
+
+$blue: #0083b7;
+$dark-blue: #212935;
+$light-blue: #e0f0fd;
+
+$teal: #47BCC7;
+$dark-teal: #47BCC7;
+
+$orange: #ff9f41;
+$dark-orange: #ff850e;
+
+$purple: #5a66b5;
+$dark-purple: #5a66b5;
+$light-purple: #dde2ff;
+
+$violet: #8e6cd0;
+$dark-violet: #7747d5;
+$light-violet: #f4efff;
+
+$brown: #ab7967;
+$dark-brown: #66636c;
+$light-brown: #e7e0e1;
+
+$pink: #F782AA;
+$dark-pink: #c76d8c;
+$light-pink: #ffeaf7;
+
+$facebook: #3B5998;
+$twitter: #55ACEE;
+$linkedin: #007BB5;
+$gplus: #E02F2F;
+
+$lock-screen-bg: #363344;
+$lock-screen-theme: #b62b45;
+$lock-screen-theme2: #e2a0b5;
+
+
+
+/*************** 2.Mixins ***************/
+
+// Gradients
+@mixin linear-gradient($fromColor, $toColor) {
+	background-color: $toColor; /* Fallback Color */
+	background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image: -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+	background-image: -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+	background-image: -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+	background-image: linear-gradient(top, $fromColor, $toColor);
+}
+
+// Transition
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+
+// Box Sizing
+@mixin box-sizing($string){
+	-webkit-box-sizing: $string;
+	-moz-box-sizing: $string;
+	box-sizing: $string;
+}
+
+// Box Shadow
+@mixin box-shadow($off-y, $off-x, $blur, $color){
+	-moz-box-shadow: $off-y $off-x $blur $color; /* FF3.5+ */
+	-webkit-box-shadow: $off-y $off-x $blur $color; /* Saf3.0+, Chrome */
+	box-shadow: $off-y $off-x $blur $color; /* Opera 10.5, IE9 */
+}
+
+@mixin box-shadow-inset($top, $left, $blur, $color, $inset:"") {
+	-webkit-box-shadow: $top $left $blur $color $inset;
+	-moz-box-shadow: $top $left $blur $color $inset;
+	box-shadow: $top $left $blur $color $inset;
+}
+
+// Border Radius
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin border-radius-all-val($radius1, $radius2, $radius3, $radius4) {
+	-webkit-border-radius: $radius1 $radius2 $radius3 $radius4;
+	-moz-border-radius: $radius1 $radius2 $radius3 $radius4;
+	border-radius: $radius1 $radius2 $radius3 $radius4;
+}
+
+@mixin transform($args){
+	-webkit-transform: $args;
+	-moz-transform: $args;
+	-o-transform: $args;
+	-ms-transform: $args;
+	transform: $args;
+}
+
+// Opacity
+@mixin opacity($opacity) {
+	opacity: $opacity / 100;
+	filter: alpha(opacity=$opacity);
+}

@@ -1,0 +1,368 @@
+// Import Sass Variables
+@import 'variables.scss';
+
+// Custom Datepickers ****************************************************
+.datepicket-container {
+	background: $white;
+	box-shadow: 0 0 20px darken($body-bg, 3%);
+	@include border-radius(3px);
+	margin-bottom: 1.2rem;
+	&.blue {
+		background: $blue;
+		.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+			background: $red !important;
+		}			
+	}
+	&.red {
+		background: $red;
+		.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+			background: $blue !important;
+		}
+	}
+	&.purple {
+		background: $purple;
+		.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+			background: $yellow !important;
+		}
+	}
+
+	// Light Colors
+	&.light-red {
+		background: $light-red;
+		.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+			background: $red !important;
+			color: $white !important;
+		}
+		.ui-datepicker-title {
+			color: $red;
+		}
+		.ui-datepicker th {
+			color: $black;
+		}
+		.ui-widget-content .ui-state-default {
+			background: rgba(255, 255, 255, 0.5);
+			color: $black;
+			&:hover {
+				background: rgba(255, 255, 255, 0.8);
+				color: $black;
+			}			
+		}
+		.ui-datepicker .ui-datepicker-prev span {
+			border-right: 10px solid rgba(0, 0, 0, 0.2);
+		}
+		.ui-datepicker .ui-datepicker-next span {
+			border-left: 10px solid rgba(0, 0, 0, 0.2);
+		}
+	}
+	&.light-red-bdr {
+		background: $white;
+		border: 1px solid $red;
+		.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+			background: $light-red !important;
+			color: $red !important;
+		}
+		.ui-datepicker-title {
+			color: $red;
+		}
+		.ui-datepicker th {
+			color: $black;
+		}
+		.ui-widget-content .ui-state-default {
+			background: rgba(255, 255, 255, 0.5);
+			color: $black;
+			&:hover {
+				background: rgba(255, 255, 255, 0.8);
+				color: $black;
+			}			
+		}
+		.ui-datepicker .ui-datepicker-prev span {
+			border-right: 10px solid $light-red;
+		}
+		.ui-datepicker .ui-datepicker-next span {
+			border-left: 10px solid $light-red;
+		}
+	}
+	&.light-blue {
+		background: $light-blue;
+		.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+			background: $blue !important;
+			color: $white !important;
+		}
+		.ui-datepicker-title {
+			color: $blue;
+		}
+		.ui-datepicker th {
+			color: $black;
+		}
+		.ui-widget-content .ui-state-default {
+			background: rgba(255, 255, 255, 0.5);
+			color: $black;
+			&:hover {
+				background: rgba(255, 255, 255, 0.8);
+				color: $black;
+			}			
+		}
+		.ui-datepicker .ui-datepicker-prev span {
+			border-right: 10px solid rgba(0, 0, 0, 0.2);
+		}
+		.ui-datepicker .ui-datepicker-next span {
+			border-left: 10px solid rgba(0, 0, 0, 0.2);
+		}
+	}
+	&.light-blue-bdr {
+		background: $white;
+		border: 1px solid $blue;
+		.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+			background: $light-blue !important;
+			color: $blue !important;
+		}
+		.ui-datepicker-title {
+			color: $blue;
+		}
+		.ui-datepicker th {
+			color: $black;
+		}
+		.ui-widget-content .ui-state-default {
+			background: rgba(255, 255, 255, 0.5);
+			color: $black;
+			&:hover {
+				background: rgba(255, 255, 255, 0.8);
+				color: $black;
+			}
+		}
+		.ui-datepicker .ui-datepicker-prev span {
+			border-right: 10px solid $light-blue;
+		}
+		.ui-datepicker .ui-datepicker-next span {
+			border-left: 10px solid $light-blue;
+		}
+	}
+	&.light-purple {
+		background: $light-purple;
+		.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+			background: $purple !important;
+			color: $white !important;
+		}
+		.ui-datepicker-title {
+			color: $purple;
+		}
+		.ui-datepicker th {
+			color: $black;
+		}
+		.ui-widget-content .ui-state-default {
+			background: rgba(255, 255, 255, 0.5);
+			color: $black;
+			&:hover {
+				background: rgba(255, 255, 255, 0.8);
+				color: $black;
+			}	
+		}
+		.ui-datepicker .ui-datepicker-prev span {
+			border-right: 10px solid rgba(0, 0, 0, 0.2);
+		}
+		.ui-datepicker .ui-datepicker-next span {
+			border-left: 10px solid rgba(0, 0, 0, 0.2);
+		}
+	}
+	&.light-purple-bdr {
+		background: $white;
+		border: 1px solid $purple;
+		.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+			background: $light-purple !important;
+			color: $purple !important;
+		}
+		.ui-datepicker-title {
+			color: $purple;
+		}
+		.ui-datepicker th {
+			color: $black;
+		}
+		.ui-widget-content .ui-state-default {
+			background: rgba(255, 255, 255, 0.5);
+			color: $black;
+			&:hover {
+				background: rgba(255, 255, 255, 0.8);
+				color: $black;
+			}			
+		}
+		.ui-datepicker .ui-datepicker-prev span {
+			border-right: 10px solid $light-purple;
+		}
+		.ui-datepicker .ui-datepicker-next span {
+			border-left: 10px solid $light-purple;
+		}
+	}
+
+
+	&.custom-height {
+		min-height: 290px;
+	} 
+	.style-one {
+		background: url(../img/datepicker/img-one.jpg) no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		position: relative;
+		height: 100%;
+		@include border-radius(3px);
+	}
+	.style-two {
+		background: url(../img/datepicker/img-two.jpg) no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		position: relative;
+		height: 100%;
+		@include border-radius(3px);
+	}
+	.style-three {
+		background: url(../img/datepicker/img-three.jpg) no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		position: relative;
+		height: 100%;
+		@include border-radius(3px);
+	}
+	.style-four {
+		background: url(../img/datepicker/img-four.jpg) no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		position: relative;
+		height: 100%;
+		@include border-radius(3px);
+	}  
+	.ui-widget-content {
+		width: 100%;
+	}
+	.ui-datepicker td {
+		span, a {
+			padding: 5px;
+			text-align: center;
+		}
+	}
+	.ui-widget.ui-widget-content {
+		border: 0;
+		background: transparent;
+	}
+	.ui-datepicker {
+		.ui-datepicker-prev, .ui-datepicker-next {
+			width: 45px;
+			height: 45px;
+			cursor: pointer;
+		}
+		.ui-datepicker-next span {
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+			border-left: 10px solid $white;
+		}
+		.ui-datepicker-prev span {
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+			border-right: 10px solid $white;
+			margin-left: 0;
+			left: 10px;
+		}
+		.ui-datepicker-next span {
+			margin-left: 0;
+			right: 10px;
+		}
+		.ui-datepicker-prev {
+			top: 0;
+			left: 0;
+		}
+		.ui-datepicker-next {
+			top: 0;
+			right: 0;
+		}
+		.ui-datepicker-prev-hover {
+			top: 0;
+			left: 0;
+		}
+		.ui-datepicker-next-hover {
+			top: 0;
+			right: 0;
+		}
+	}
+	.ui-state-default,
+	.ui-widget-content .ui-state-default,
+	.ui-widget-header .ui-state-default,
+	.ui-button {
+		border: none;
+		background: transparent;
+		color: $white;
+		border-radius: 2px;
+		&:active, &.ui-state-active:hover {
+			background: rgba(0, 0, 0, 0.1);
+			color: $white;
+		}
+		&:hover, &:focus {
+			border: 0;
+			background: rgba(0, 0, 0, 0.1);
+			color: $white;
+		}
+	}
+
+	.ui-state-active,
+	.ui-widget-content .ui-state-active,
+	.ui-widget-header .ui-state-active,
+	a.ui-button:active {
+		background: rgba(0, 0, 0, 0.2);
+		color: $white;
+	}
+
+	.ui-widget-header {
+		.ui-state-highlight {
+			background: $red;
+			color: $white;
+		}
+		border: 0;
+		background: rgba(255, 255, 255, 0.1);
+		color: $white;
+	}
+
+	.ui-datepicker {
+		.ui-datepicker-header {
+			padding: 10px 0;
+			font-size: 14px;
+		}
+		th {
+			color: $white;
+		}
+	}
+	.ui-state-hover, .ui-widget-content .ui-state-hover,
+	.ui-state-focus, .ui-widget-content .ui-state-focus {
+		border: 0;
+		background: rgba(255, 255, 255, 0.3);
+		color: $white;
+	}
+
+	.ui-widget-header {
+		.ui-state-hover, .ui-state-focus {
+			border: 0;
+			background: rgba(255, 255, 255, 0.1);
+			color: $white;
+		}
+	}
+	.ui-state-highlight,
+	.ui-widget-content .ui-state-highlight {
+		background: $red;
+		color: $white;
+	}
+}
+
+
+.datepicket-container.danger .ui-state-default, .ui-widget-content .datepicket-container.danger .ui-state-default, .ui-widget-header .datepicket-container.danger .ui-state-default, .ui-button {
+	border-radius: 30px;
+	text-align: center;
+}
+
+.datepicket-container.info .ui-state-default, .ui-widget-content .datepicket-container.info .ui-state-default, .ui-widget-header .datepicket-container.info .ui-state-default, .ui-button {
+	border-radius: 4px;
+	text-align: center;
+}

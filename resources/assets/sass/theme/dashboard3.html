@@ -1,0 +1,983 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="Unify Admin Panel" />
+		<meta name="keywords" content="Analytics, CRM, Admin, Dashboard, Bootstrap4, Sass, CSS3, HTML5, Responsive Dashboard, Responsive Admin Template, Admin Template, Best Admin Template, Bootstrap Template, Themeforest" />
+		<meta name="author" content="Bootstrap Gallery" />
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<title>Unify Admin Dashboard - Analytics</title>
+
+		<!-- Common CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="fonts/icomoon/icomoon.css" />
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- Other CSS includes plugins - Cleanedup unnecessary CSS -->
+		<!-- Chartist CSS -->
+		<link href="vendor/chartist/css/chartist.min.css" rel="stylesheet" />
+		<link href="vendor/chartist/css/chartist-custom.css" rel="stylesheet" />		
+
+	</head>
+	<body>
+
+		<!-- Loading starts -->
+		<div class="loading-wrapper">
+			<div class="loading">
+				<div class="img"></div>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<!-- Loading ends -->
+		
+		<!-- BEGIN .app-wrap -->
+		<div class="app-wrap">
+			<!-- BEGIN .app-heading -->
+			<header class="app-header">
+				<div class="container-fluid">
+					<div class="row gutters">
+						<div class="col-xl-5 col-lg-5 col-md-5 col-sm-3 col-4">
+							<a class="mini-nav-btn" href="#" id="app-side-mini-toggler">
+								<i class="icon-sort"></i>
+							</a>
+							<a href="#app-side" data-toggle="onoffcanvas" class="onoffcanvas-toggler" aria-expanded="true">
+								<i class="icon-chevron-thin-left"></i>
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-4">
+							<a href="index.html" class="logo">
+								<img src="img/unify.png" alt="Unify Admin Dashboard" />
+							</a>
+						</div>
+						<div class="col-xl-5 col-lg-5 col-md-5 col-sm-3 col-4">
+							<ul class="header-actions">
+								<li class="dropdown">
+									<a href="#" id="notifications" data-toggle="dropdown" aria-haspopup="true">
+										<i class="icon-notifications_none"></i>
+										<span class="count-label"></span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right lg" aria-labelledby="notifications">
+										<ul class="imp-notify">
+											<li>
+												<div class="icon">W</div>
+												<div class="details">
+													<p><span>Wilson</span> The best Dashboard design I have seen ever.</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">J</div>
+												<div class="details">
+													<p><span>John Smith</span> Jhonny sent you a message. Read now!</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon secondary">R</div>
+												<div class="details">
+													<p><span>Justin Mezzell</span> Stella, Added you as a Friend. Accept it!</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" id="todos" data-toggle="dropdown" aria-haspopup="true">
+										<i class="icon-person_outline"></i>
+										<span class="count-label red"></span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right lg" aria-labelledby="todos">
+										<ul class="stats-widget">
+				              <li>
+				                <h4>$37895</h4>
+				                <p>Revenue <span>+2%</span></p>
+				                <div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%">
+														<span class="sr-only">87% Complete (success)</span>
+													</div>
+												</div>
+				              </li>
+				              <li>
+				                <h4>4,897</h4>
+				                <p>Downloads <span>+39%</span></p>
+				                <div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+														<span class="sr-only">65% Complete (success)</span>
+													</div>
+												</div>
+				              </li>
+				              <li>
+				                <h4>2,219</h4>
+				                <p>Uploads <span class="text-secondary">-7%</span></p>
+				                <div class="progress">
+													<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100" style="width: 42%">
+														<span class="sr-only">42% Complete (success)</span>
+													</div>
+												</div>
+				              </li>
+				            </ul>
+				          </div>
+								</li>
+								<li class="dropdown">
+									<a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
+										<img class="avatar" src="img/user.png" alt="User Thumb" />
+										<span class="user-name">Sofia Vergara</span>
+										<i class="icon-chevron-small-down"></i>
+									</a>
+									<div class="dropdown-menu lg dropdown-menu-right" aria-labelledby="userSettings">
+										<ul class="user-settings-list">
+											<li>
+												<a href="profile.html">
+													<div class="icon">
+														<i class="icon-account_circle"></i>
+													</div>
+													<p>Profile</p>
+												</a>
+											</li>
+											<li>
+												<a href="profile.html">
+													<div class="icon red">
+														<i class="icon-cog3"></i>
+													</div>
+													<p>Settings</p>
+												</a>
+											</li>
+											<li>
+												<a href="filters.html">
+													<div class="icon yellow">
+														<i class="icon-schedule"></i>
+													</div>
+													<p>Activity</p>
+												</a>
+											</li>
+										</ul>
+										<div class="logout-btn">
+											<a href="login.html" class="btn btn-primary">Logout</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- END: .app-heading -->
+			<!-- BEGIN .app-container -->
+			<div class="app-container">
+				<!-- BEGIN .app-side -->
+				<aside class="app-side" id="app-side">
+					<!-- BEGIN .side-content -->
+					<div class="side-content">
+						<!-- BEGIN .user-profile -->
+						<div class="user-profile">
+							<img src="img/user.png" class="profile-thumb" alt="User Thumb">
+							<h6 class="profile-name">Yuki Hayashi</h6>
+							<ul class="profile-actions">
+								<li>
+									<a href="#">
+										<i class="icon-social-skype"></i>
+										<span class="count-label red"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-social-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="login.html">
+										<i class="icon-export"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- END .user-profile -->
+						<!-- BEGIN .side-nav -->
+						<nav class="side-nav">
+							<!-- BEGIN: side-nav-content -->
+							<ul class="unifyMenu" id="unifyMenu">
+								<li class="active selected">
+									<a href="#" class="has-arrow" aria-expanded="false">
+										<span class="has-icon">
+											<i class="icon-laptop_windows"></i>
+										</span>
+										<span class="nav-title">Dashboards</span>
+									</a>
+									<ul aria-expanded="false" class="collapse in">
+										<li>
+											<a href='index.html'>Dashboard</a>
+										</li>
+										<li>
+											<a href='dashboard2.html'>CRM</a>
+										</li>
+										<li>
+											<a href='dashboard3.html' class="current-page">Analytics</a>
+										</li>
+										<li>
+											<a href='dashboard4.html'>Ecommerce</a>
+										</li>
+										<li>
+											<a href='quick-dashboard.html'>Quick Dashboard</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="widgets.html">
+										<span class="has-icon">
+											<i class="icon-flash-outline"></i>
+										</span>
+										<span class="nav-title">Graph Widgets</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="has-arrow" aria-expanded="false">
+										<span class="has-icon">
+											<i class="icon-adjust2"></i>
+										</span>
+										<span class="nav-title">Cool Features</span>
+									</a>
+									<ul aria-expanded="false">
+										<li>
+											<a href="filters.html">Content Filter</a>
+										</li>
+										<li>
+											<a href="datepickers.html">Datepickers</a>
+										</li>
+										<li>
+											<a href='map-skins.html'>Gmap Skins</a>
+										</li>
+										<li>
+											<a href='vector-maps.html'>Vector Maps</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="has-arrow" aria-expanded="false">
+										<span class="has-icon">
+											<i class="icon-tabs-outline"></i>
+										</span>
+										<span class="nav-title">Pages</span>
+									</a>
+									<ul aria-expanded="false">
+										<li>
+											<a href='profile.html'>Profile</a>
+										</li>
+										<li>
+											<a href='calendar.html'>Calendar</a>
+										</li>
+										<li>
+											<a href='gallery.html'>Gallery</a>
+										</li>
+										<li>
+											<a href='invoice.html'>Invoice</a>
+										</li>
+										<li>
+											<a href='timeline.html'>Timeline</a>
+										</li>
+										<li>
+											<a href="pricing.html">Pricing</a>
+										</li>
+										<li>
+											<a href="faq.html">Faq's</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="has-arrow" aria-expanded="false">
+										<span class="has-icon">
+											<i class="icon-layers"></i>
+										</span>
+										<span class="nav-title">Layouts</span>
+									</a>
+									<ul aria-expanded="false">
+										<li>
+											<a href='custom-drag.html'>Drag &amp; Drop</a>
+										</li>
+										<li>
+											<a href='layout.html'>Default Layout</a>
+										</li>
+										<li>
+											<a href='layout-range-date-header.html'>Layout Date Range</a>
+										</li>
+										<li>
+											<a href='fixed-sidebar.html'>Fixed Sidebar</a>
+										</li>
+										<li>
+											<a href='layout-logo-left.html'>Logo on Left</a>
+										</li>
+										<li>
+											<a href='dark-header.html'>Dark Header</a>
+										</li>
+										<li>
+											<a href='dark-sidebar.html'>Dark Sidebar</a>
+										</li>
+										<li>
+											<a href='rtl.html'>RTL Layout</a>
+										</li>
+										<li>
+											<a href='boxed.html'>Boxed Layout</a>
+										</li>
+										<li>
+											<a href='boxed-slim-sidebar.html'>Boxed Slim Sidebar</a>
+										</li>
+										<li>
+											<a href='slim-sidebar.html'>Slim Sidebar</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="comments.html">
+										<span class="has-icon">
+											<i class="icon-chat_bubble_outline"></i>
+										</span>
+										<span class="nav-title">Comments</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="has-arrow" aria-expanded="false">
+										<span class="has-icon">
+											<i class="icon-chart-area-outline"></i>
+										</span>
+										<span class="nav-title">Graphs</span>
+									</a>
+									<ul aria-expanded="false">
+										<li>
+											<a href='c3-graphs.html'>C3 Graphs</a>
+										</li>
+										<li>
+											<a href='flot.html'>Flot Graphs</a>
+										</li>
+										<li>
+											<a href='morris.html'>Morris Graphs</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="has-arrow" aria-expanded="false">
+										<span class="has-icon">
+											<i class="icon-center_focus_strong"></i>
+										</span>
+										<span class="nav-title">Forms</span>
+									</a>
+									<ul aria-expanded="false">
+										<li>
+											<a href='form-inputs.html'>Form Inputs</a>
+										</li>
+										<li>
+											<a href='input-groups.html'>Inputs Groups</a>
+										</li>
+										<li>
+											<a href='checkbox-radio.html'>Checkbox &amp; Radio</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="has-arrow" aria-expanded="false">
+										<span class="has-icon">
+											<i class="icon-beaker"></i>
+										</span>
+										<span class="nav-title">UI Elements</span>
+									</a>
+									<ul aria-expanded="false">
+										<li>
+											<a href='general-elements.html'>General Elements</a>
+										</li>
+										<li>
+											<a href='buttons.html'>Buttons</a>
+										</li>
+										<li>
+											<a href='tabs.html'>Tabs</a>
+										</li>
+										<li>
+											<a href="modals.html">Modals</a>
+										</li>
+										<li>
+											<a href='accordion.html'>Accordion</a>
+										</li>
+										<li>
+											<a href="labels-badges.html">Labels &amp; Badges</a>
+										</li>
+										<li>
+											<a href='notifications.html'>Notifications</a>
+										</li>
+										<li>
+											<a href='carousel.html'>Carousels</a>
+										</li>
+										<li>
+											<a href='list-items.html'>List Items</a>
+										</li>
+										<li>
+											<a href='cards.html'>Cards</a>
+										</li>
+										<li>
+											<a href='navbars.html'>Navbars</a>
+										</li>
+										<li>
+											<a href='popovers-tooltips.html'>Popovers &amp; Tooltips</a>
+										</li>
+										<li>
+											<a href='typography.html'>Typography</a>
+										</li>
+										<li>
+											<a href='icons.html'>Icons</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="tables.html">
+										<span class="has-icon">
+											<i class="icon-border_outer"></i>
+										</span>
+										<span class="nav-title">Tables</span>
+									</a>
+								</li>
+								<li>
+									<a href="datatables.html">
+										<span class="has-icon">
+											<i class="icon-border_all"></i>
+										</span>
+										<span class="nav-title">Data Tables</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="has-arrow" aria-expanded="false">
+										<span class="has-icon">
+											<i class="icon-lock_outline"></i>
+										</span>
+										<span class="nav-title">Authentication</span>
+									</a>
+									<ul aria-expanded="false">
+										<li>
+											<a href='login.html'>Login</a>
+										</li>
+										<li>
+											<a href='signup.html'>Signup</a>
+										</li>
+										<li>
+											<a href='forgot-pwd.html'>Forgot Password</a>
+										</li>
+										<li>
+											<a href="locked-screen.html">Locked Screen</a>
+										</li>
+										<li>
+											<a href='error404.html'>Error 404</a>
+										</li>
+										<li>
+											<a href='error505.html'>Error 505</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<!-- END: side-nav-content -->
+						</nav>
+						<!-- END: .side-nav -->
+					</div>
+					<!-- END: .side-content -->
+				</aside>
+				<!-- END: .app-side -->
+
+				<!-- BEGIN .app-main -->
+				<div class="app-main">
+					<!-- BEGIN .main-heading -->
+					<header class="main-heading">
+						<div class="container-fluid">
+							<div class="row">
+							<div class="row">
+								<div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 col-12">
+										<i class="icon-laptop_windows"></i>
+									</div>
+									<div class="page-title">
+										<h5>Analytics</h5>
+										<h6 class="sub-heading">Welcome to Unify Admin Template</h6>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+									<div class="input-group form-group search-block">
+										<input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
+										<span class="input-group-btn">
+											<button class="btn btn-primary" type="button">Search</button>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</header>
+					<!-- END: .main-heading -->
+					<!-- BEGIN .main-content -->
+					<div class="main-content">
+						<!-- Row start -->
+						<div class="row gutters">
+							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+								<div class="card">
+									<div class="card-body">
+										<div class="stats-graph-widget">
+											<div class="row gutters">
+												<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+													<h6>Sessions</h6>
+													<div class="stats-graph">
+														<span class="updating-chart-one">1,4,8,12,3,5,8,4,5,3,9,3,5,2</span>
+													</div>
+												</div>
+												<div class="col-xl-6 col-md-6 col-sm-6 col-xs-6">
+													<h4>64,897</h4>
+													<p class="growth">
+														21.5%<i class="icon-call_made up"></i>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+								<div class="card">
+									<div class="card-body">
+										<div class="stats-graph-widget">
+											<div class="row gutters">
+												<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+													<h6>Pageviews</h6>
+													<div class="stats-graph">
+														<span class="updating-chart-two">12,8,3,6,5,9,7,3,5,4,5,3,9,3,5,2</span>
+													</div>
+												</div>
+												<div class="col-xl-6 col-md-6 col-sm-6 col-xs-6">
+													<h4>58,675</h4>
+													<p class="growth">
+														18.6%<i class="icon-call_made up"></i>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="stats-graph-widget">
+											<div class="row gutters">
+												<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+													<h6>Goals</h6>
+													<div class="stats-graph">
+														<span class="updating-chart-four">1,4,8,3,6,5,9,7,3,5,9,3,5,2,12</span>
+													</div>
+												</div>
+												<div class="col-xl-6 col-md-6 col-sm-6 col-xs-6">
+													<h4>47,285</h4>
+													<p class="growth">
+														06.8%<i class="icon-call_made up"></i>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Row end -->
+						<!-- Row start -->
+						<div class="row gutters">
+							<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+								<div class="card">
+									<div class="card-header">Statistics</div>
+									<div class="card-body">
+										<div class="chartist custom-two">
+											<div class="custom-area-chart"></div>
+										</div>
+										<div class="row gutter">
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+												<div class="info-stats2">
+													<h5 class="text-secondary">$10,319 <span>Today</span></h5>
+													<p>Prev. $9230</p>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+												<div class="info-stats2">
+													<h5 class="text-primary">$26,415 <span>Week</span></h5>
+													<p>Prev. $15,870</p>
+												</div>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+												<div class="info-stats2">
+													<h5 class="text-primary">$98,973 <span>Month</span></h5>
+													<p>Prev. $35,740</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+								<div class="card">
+									<div class="card-header">Social</div>
+									<div class="card-body">
+										<ul class="social-stats">
+											<li class="clearfix">
+												<div class="month-type" id="likes"></div>
+												<div class="social-info">
+													<h4>18<sup>k</sup><i class="icon-chevron-up text-primary"></i></h4>
+													<p class="text-truncate">Overall Likes</p>
+												</div>
+											</li>
+											<li class="clearfix">
+												<div class="month-type" id="shares"></div>
+												<div class="social-info">
+													<h4>12<sup>k</sup><i class="icon-chevron-up text-primary"></i></h4>
+													<p class="text-truncate">Overall Shares</p>
+												</div>
+											</li>
+											<li class="clearfix">
+												<div class="month-type" id="comments"></div>
+												<div class="social-info">
+													<h4>10<sup>k</sup><i class="icon-chevron-down text-secondary"></i></h4>
+													<p class="text-truncate">Overall Comments</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Row end -->
+						
+						<!-- Row start -->
+						<div class="row gutters">
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+								<div class="card">
+									<div class="card-header">Compare Graphs</div>
+									<div class="toggle-switch tr">
+										<input type="checkbox" class="check" checked>
+										<b class="b switch"></b>
+										<b class="b track"></b>
+									</div>
+									<div class="card-body">
+										<!-- Row starts -->
+										<div class="row align-items-center">
+											<div class="col-xl-5 col-lg-5 col-md-5 col-sm-5">
+												<div class="chartist custom-one">
+													<div class="compare-one"></div>
+												</div>
+												<div class="info-stats">
+													<span class="info-label red"></span>
+													<p class="info-title">Week #1</p>
+													<h4 class="info-total">62,800</h4>
+												</div>
+											</div>
+											<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+												<div class="vs"></div>
+											</div>
+											<div class="col-xl-5 col-lg-5 col-md-5 col-sm-5">
+												<div class="chartist custom-two">
+													<div class="compare-two"></div>
+												</div>
+												<div class="info-stats">
+													<span class="info-label"></span>
+													<p class="info-title">Week #2</p>
+													<h4 class="info-total">86,200</h4>
+												</div>
+											</div>
+										</div>
+										<!-- Row ends -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Row ends -->
+
+						<!-- Row start -->
+						<div class="row gutters">
+							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+								<div class="card">
+									<div class="card-header">Activity</div>
+									<div class="customScroll">
+										<div class="card-body pt-0 pb-0">
+											<ul class="project-activity">
+												<li class="activity-list">
+													<div class="detail-info">
+														<span class="lbl primary">N</span>
+														<p class="desc-info"><span>Novane Durso</span> server not found, connection problem.</p>
+														<a href="#" class="activity-status"><i class="icon-done_all"></i>Read</a>
+													</div>
+												</li>
+												<li class="activity-list">
+													<div class="detail-info">
+														<span class="lbl secondary">L</span>
+														<p class="desc-info"><span>Luke Etheridge</span> send email notifications of subscriptions</p>
+														<a href="#" class="activity-status">Mark as read</a>
+													</div>
+												</li>
+												<li class="activity-list">
+													<div class="detail-info">
+														<span class="lbl primary">C</span>
+														<p class="desc-info"><span>Cosmin Capitanu</span> required change logs activity reports</p>
+														<a href="#" class="activity-status"><i class="icon-done_all"></i>Read</a>
+													</div>
+												</li>
+												<li class="activity-list">
+													<div class="detail-info">
+														<span class="lbl secondary">M</span>
+														<p class="desc-info"><span>Moneyas Olina</span> strategic partnership plan</p>
+														<a href="#" class="activity-status">Mark as read</a>
+													</div>
+												</li>
+												<li class="activity-list">
+													<div class="detail-info">
+														<span class="lbl primary">A</span>
+														<p class="desc-info"><span>Auurso Novane</span> server not found, connection problem.</p>
+														<a href="#" class="activity-status"><i class="icon-done_all"></i>Read</a>
+													</div>
+												</li>
+												<li class="activity-list">
+													<div class="detail-info">
+														<span class="lbl primary">J</span>
+														<p class="desc-info"><span>Jovin Xamire</span> send email notifications of subscriptions</p>
+														<a href="#" class="activity-status">Mark as read</a>
+													</div>
+												</li>
+												<li class="activity-list">
+													<div class="detail-info">
+														<span class="lbl primary">C</span>
+														<p class="desc-info"><span>Cosmin Capitanu</span> required change logs activity reports</p>
+														<a href="#" class="activity-status"><i class="icon-done_all"></i>Read</a>
+													</div>
+												</li>
+												<li class="activity-list">
+													<div class="detail-info">
+														<span class="lbl secondary">M</span>
+														<p class="desc-info"><span>Moneyas Olina</span> strategic partnership plan</p>
+														<a href="#" class="activity-status">Mark as read</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+								<div class="card">
+									<div class="card-header">Chat</div>
+									<div class="customScroll">
+										<div class="card-body">
+											<ul class="chats">
+												<li class="chats-left">
+													<div class="chats-avatar">
+														<img src="img/avatar2.svg" alt="Unify Admin">
+														<div class="chats-name">James</div>
+													</div>
+													<div class="chats-text info">Hello, I'm James.</div>
+													<div class="chats-hour">08:55 <span class="icon-done_all"></span></div>
+												</li>
+												<li class="chats-right">
+													<div class="chats-avatar">
+														<img src="img/avatar1.svg" alt="Unify Admin">
+														<div class="chats-name">You</div>
+													</div>
+													<div class="chats-text danger">How can I help you today?</div>
+													<div class="chats-hour">08:56 <span class="icon-done_all"></span></div>
+												</li>
+												<li class="chats-left">
+													<div class="chats-avatar">
+														<img src="img/avatar2.svg" alt="Unify Admin">
+														<div class="chats-name">James</div>
+													</div>
+													<div class="chats-text info">I need more information about Developer Plan.</div>
+													<div class="chats-hour">08:57 <span class="icon-done_all"></span></div>
+												</li>
+												<li class="chats-right">
+													<div class="chats-avatar">
+														<img src="img/avatar1.svg" alt="Unify Admin">
+														<div class="chats-name">You</div>
+													</div>
+													<div class="chats-text danger">Are we meeting today?</div>
+													<div class="chats-hour">08:59 <span class="icon-done_all"></span></div>
+												</li>
+												<li class="chats-left">
+													<div class="chats-avatar">
+														<img src="img/avatar2.svg" alt="Unify Admin">
+														<div class="chats-name">James</div>
+													</div>
+													<div class="chats-text info">Maybe in an hour or so?</div>
+													<div class="chats-hour">09:00 <span class="icon-done_all"></span></div>
+												</li>
+												<li class="chats-right">
+													<div class="chats-avatar">
+														<img src="img/avatar1.svg" alt="Unify Admin">
+														<div class="chats-name">You</div>
+													</div>
+													<div class="chats-text danger">I need more information about Developer Plan.</div>
+													<div class="chats-hour">09:00 <span class="icon-done_all"></span></div>
+												</li>
+												<li class="chats-left">
+													<div class="chats-avatar">
+														<img src="img/avatar2.svg" alt="Unify Admin">
+														<div class="chats-name">James</div>
+													</div>
+													<div class="chats-text info">Well I am not sure.</div>
+													<div class="chats-hour">09:01 <span class="icon-done_all"></span></div>
+												</li>
+												<li class="chats-right">
+													<div class="chats-avatar">
+														<img src="img/avatar1.svg" alt="Unify Admin">
+														<div class="chats-name">You</div>
+													</div>
+													<div class="chats-text danger">The rest of the team is not here yet.</div>
+													<div class="chats-hour">09:01 <span class="icon-done_all"></span></div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+								<div class="card">
+									<div class="card-header">Todo's</div>
+									<div class="customScroll">
+										<div class="card-body">
+											<ul class="task-list">
+												<li class="list completed">
+													<span></span>
+													<div class="task-details">
+														<p class="date">
+															<small class="text-secondary">Upgrade</small> - Late 3 days
+														</p>
+														<p>Web server hardware needs to be upgraded</p>
+														<small>Scheduled for 24th Mar, 2017</small>
+													</div>
+												</li>
+												<li class="list">
+													<span></span>
+													<div class="task-details">
+														<p class="date">
+															<small class="text-success">Bills</small> - Pay in 3 days
+														</p>
+														<p>Prepare for bi-weekly meeting to discuss new features</p>
+														<small>Scheduled for 20th Mar, 2017</small>
+													</div>
+												</li>
+												<li class="list completed">
+													<span></span>
+													<div class="task-details">
+														<p class="date">
+															<small class="text-secondary">Meeting</small> - Upcoming in 5 days
+														</p>
+														<p>Meeting with Sara in the Caffee Caldo for Brunch</p>
+														<small>Scheduled for 16th Mar, 2017</small>
+													</div>
+												</li>
+												<li class="list">
+													<span></span>
+													<div class="task-details">
+														<p class="date">
+															<small class="text-secondary">Meeting</small> - Upcoming in 5 days
+														</p>
+														<p>Meeting with Sara in the Caffee Caldo for Brunch</p>
+														<small>Scheduled for 16th Mar, 2017</small>
+													</div>
+												</li>
+												<li class="list">
+													<span></span>
+													<div class="task-details">
+														<p class="date">
+															<small class="text-primary">Meeting</small> - Delay 7 days
+														</p>
+														<p>Technical management meeting</p>
+														<small>Completed 15 days ago</small>
+													</div>
+												</li>
+												<li class="list completed">
+													<span></span>
+													<div class="task-details">
+														<p class="date">
+															<small>Transfer</small> - Completed
+														</p>
+														<p>Transfer all domain names as soon as possible!</p>
+														<small>Completed 2 days ago</small>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Row end -->
+
+						<!-- Row start -->
+						<div class="row gutters">
+							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+								<div class="weather-widget cloudy">
+									<h3>Showers</h3>
+									<p>Sunday 06:00 AM</p>
+									<h2>12&deg;</h2>
+									<p>London, UK</p>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+								<div class="weather-widget rainy">
+									<h3>Rainy</h3>
+									<p>Sunday 07:00 AM</p>
+									<h2>7&deg;</h2>
+									<p>Berlin, Germany</p>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+								<div class="weather-widget sunny">
+									<h3>Sunny</h3>
+									<p>Sunday 10:00 AM</p>
+									<h2>25&deg;</h2>
+									<p>Los Angeles, CA, USA</p>
+								</div>
+							</div>
+						</div>
+						<!-- Row end -->						
+					</div>
+					<!-- END: .main-content -->
+				</div>
+				<!-- END: .app-main -->
+			</div>
+			<!-- END: .app-container -->
+			<!-- BEGIN .main-footer -->
+			<footer class="main-footer fixed-btm">
+				Copyright Unify Admin 2017.
+			</footer>
+			<!-- END: .main-footer -->
+		</div>
+		<!-- END: .app-wrap -->
+
+		<!-- jQuery first, then Tether, then other JS. -->
+		<script src="js/jquery.js"></script>
+		<script src="js/tether.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="vendor/unifyMenu/unifyMenu.js"></script>
+		<script src="vendor/onoffcanvas/onoffcanvas.js"></script>
+		<script src="js/moment.js"></script>
+
+		<!-- Peity JS -->
+		<script src="vendor/peity/peity.min.js"></script>
+		<script src="vendor/peity/custom-peity.js"></script>
+
+		<!-- Circliful js -->
+		<script src="vendor/circliful/circliful.min.js"></script>
+		<script src="vendor/circliful/circliful.custom.js"></script>
+
+		<!-- Chartist JS -->
+		<script src="vendor/chartist/js/chartist.min.js"></script>
+		<script src="vendor/chartist/js/chartist-tooltip.js"></script>
+		<script src="vendor/chartist/js/custom/custom-area-chart2.js"></script>
+		<script src="vendor/chartist/js/custom/custom-compare-line.js"></script>
+
+		<!-- Slimscroll JS -->
+		<script src="vendor/slimscroll/slimscroll.min.js"></script>
+		<script src="vendor/slimscroll/custom-scrollbar.js"></script>
+
+		<!-- Common JS -->
+		<script src="js/common.js"></script>
+
+	</body>
+</html>

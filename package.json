@@ -15,7 +15,7 @@
     "bootstrap-vue": "^1.5.1",
     "browser-sync": "^2.24.6",
     "browser-sync-webpack-plugin": "^2.2.2",
-    "chart.js": "2.7.0",
+    "chart.js": "2.9.4",
     "cross-env": "^5.2.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
